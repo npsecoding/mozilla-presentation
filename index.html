@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Accessibility</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="img/wheelchair_stairs.jpg">
+					<h1>Ramping Up</h1>
+					<h1>the Web</h1>
+				</section>
+				<section data-background="img/pyramid.jpg"></section>
+				<section data-background="#00414c">
+					<blockquote>
+						&ldquo;Accessibility rights are human rights.&rdquo;
+						<p>- Tim Cook, Apple</p>
+					</blockquote>
+					<aside class="notes">
+					    Important: In some states and provinces businesses have an obligation to make their facilities accessible by law. Accessiblity is becoming ingrained in our culture.
+					</aside>
+				</section>
+				<section data-background="#004c31">
+					<blockquote>
+						&ldquo;About 15% of the world's population lives with some form of disability.&rdquo;
+						<p>- WHO</p>
+					</blockquote>
+					<aside class="notes">
+					    About 1 billion people. This number is growing as people age motor skills, vision and hearing degrade.
+					    1 billion people who can't understand, navigate, and interact or contribute to the Web. That's a huge loss
+					    of human potential.
+					</aside>
+				</section>
+				<section data-background="#44146f">
+					<h3>Accessibility</h3><p>and</p><h3> Firefox Dev Tools</h3>
+				</section>
+				<section data-background="#911932">
+					<h2>Goals:</h2><br>
+					<h4 class="fragment highlight-current-green grow">Easy Recognition of Elements</h4>
+					<h4 class="fragment highlight-current-green grow">Fast Evaluation of Accessible Design</h4>
+				</section>
+				<section data-background="img/tool.png">
+					<h4 class="fragment fade-up" style="text-align:right">What Goes Here?</h4>
+					<aside class="notes">
+						A Tool to Examine Accessible Properties.
+						Given a Node quickly determine the accessible properties.
+					</aside>
+				</section>
+				<section><h2>Extract Info</h2></section>
+				<section data-background="img/link.png">
+					<h4 class="fragment fade-up" style="text-align:right">Name</h4>
+					<h4 class="fragment fade-up" style="text-align:right">Role</h4>
+					<h4 class="fragment fade-up" style="text-align:right">Action</h4>
+					<aside class="notes">
+						What information is important?
+					</aside>
+				</section>
+				<section><h2>Property Order</h2></section>
+				<section data-background="img/order.png">
+					<aside class="notes">
+						Order of properties matter, name and role are crucial so up at the top.
+						Also what values should be exposed and not hidden in expandable.
+						2 different containers.
+					</aside>
+				</section>
+				<section><h2>Property Emphasis</h2></section>
+				<section data-background="img/two_container.png"></section>
+				<section data-background="img/one_container.png"></section>
+				<section><h2>Grouping</h2></section>
+				<section data-background="img/grouping.png"></section>
+				<section>
+					<h2>Effeciency</h2>
+					<aside class="notes">
+						Cache the created propertys for the node, and only add new properties.
+						Improves performance.
+					</aside>
+				</section>
+				<section>All Property Views are created Dynamically</section>
+				<section>
+				<h4>Only Create new Properties</h4>
+	    <pre><code>
+    		if(!property.alreadyCreated) {
+    			//create view
+    		} else {
+    			//retrieve from local cache
+    		}
+	    </code></pre>
+				</section>
+				<section>
+				<h4>Always Update Value Field</h4>
+	    <pre><code>
+    		onPropertySelected () {
+    			//refresh value container
+    		}
+	    </code></pre>
+				</section>
+				<section>
+					<section><h1>WHO?</h1></section>
+					<section>
+						<br>
+						<h3>Anyone ...</h3>
+						<span class="fragment fade-in">
+						    <span class="fragment fade-out"><h4>With a Disability</h4></span>
+						</span>
+				    	<span class="fragment fade-in">
+				    	    <span class="fragment fade-out"><h4>Wanting to Create More Accessible Sites</h4></span>
+				    	</span>
+				    	<span class="fragment fade-in">
+				    	    <h4>Interested in Accessible Design</h4>
+				    	</span>
+					</section>
+				</section>
+				<section data-background="rgb(181, 83, 60)">
+					<h3>THANK YOU:</h3>
+					<p>University Team</p>
+					<p>Other Interns</p>
+					<p>Mozillian Community</p>
+					<p>David Bolter, Yura Zenevich and Platform Accessibility Team</p>
+					<br><img src="img/thanks.jpg" width="40%" height="40%">
+					<aside class="notes">
+						University Team: Giving me this oppurtunity
+						Other Interns: Making the experience so much fun
+						Mozillian Community: Supporting and encouraging us
+						David being an awesome manager, Yura for being an amazing mentor.
+					</aside>
+				</section>
+				<section data-background="rgb(77, 126, 101)">
+					<h2>I'm A Mozillian</h2>
+					<aside class="notes">
+						I'm walking away from this experience as a Mozillian and will
+						continue to support Mozilla's Mission after my internship.
+					</aside>
+				</section>
+				<section>
+					<h2>Questions?</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
