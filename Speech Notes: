@@ -32,11 +32,30 @@ To put that number in perspective that's about 1 billion people.
 That's a huge loss of human potential and this number is only growing as people age motor skills, vision and hearing degrade.
 
 ---------------------------------------------------------------------------------------------------------------------
+VISION IMPAIRMENT
+---------------------------------------------------------------------------------------------------------------------
+BRING UP TWITTER.COM in WEB BROWSER
+Sighted Internet:
+What do we do when we visit a site.
+If I've never been to a site before:
+- Eyes scan across the top of the page looking for important shortcuts/navigation links
+- Scan through content looking for headlines, bolded/highlighted fields, pictures
+- Random scanning and activation
+If I'm familiar with the site : Targeted scanning and activation for example the search bar
+
+Show TWITTER.COM TAB NAVIGATION
+Sightless Internet:
+- There is no looking, random scanning
+- Keyboard navigation is structured from top to bottom
+- (Screen Reader) Text to speech reading out accessible information for the current element
+- Information is provided by properties set by developer
+
+---------------------------------------------------------------------------------------------------------------------
 PROJECT:
 ---------------------------------------------------------------------------------------------------------------------
 
-This summer I had the oppurtunity to make Firefox Devtools more Accessible.
-Worked on various bug fixes and learned a new way to navigate the web.
+This summer I had the oppurtunity to make Firefox Devtools more Accessible and learned a new way to navigate the web.
+Worked on various bug fixes to improve the sightless navigation experience of devtools and a tool to evaluate the accessibility of the site.
 This talk will focus on an Accessibility Tool I created.
 
 Purpose of tool:
@@ -71,15 +90,24 @@ Steps:
 3.) More Understandable
 	- Grouping similar items
 	- Title and Name overriding
-4.) Easier to Use
-	- Search Filter Bar
-5.) Effecient
+4.) Effecient
 	- Fast and quick retrieval of properties
 	- Cache already created views
 
 ---------------------------------------------------------------------------------------------------------------------
 USE CASES AND DEMO:
 ---------------------------------------------------------------------------------------------------------------------
+Twitter Website
+
+Good Enough:
+Sign Up Button, Log In Button
+
+Bad:
+- Search Button
+- Featured Header
+
+Can't Navigate to:
+- More dropdown
 
 ---------------------------------------------------------------------------------------------------------------------
 THANK YOU:
