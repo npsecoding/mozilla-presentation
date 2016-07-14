@@ -59,9 +59,6 @@
 					    of human potential.
 					</aside>
 				</section>
-				<section data-background="#525e7f"><h2>Sighted Internet</h2></section>
-				<section data-background="#525e7f"><h2>Sightless Internet</h2></section>
-				<section data-background="#424b66"><h3>How Accessible is My Site?</h3></section>
 				<section data-background="#44146f">
 					<h2>Accessibility</h2><p>and</p><h2>Firefox Dev Tools</h2>
 				</section>
@@ -71,7 +68,9 @@
 					    <div style="margin-left: 50%;"><h2>Tool</h2><img src="img/toolbox.png" style="border:0; height:256px"></div>
 					</div>
 				</section>
-				<section data-background="#911932">
+				<section data-background="#424b66"><h2>Sighted Web</h2></section>
+				<section data-background="#424b66"><h2>Sightless Web</h2></section>
+				<section data-background="rgb(181, 83, 60)">
 					<h2>Goals:</h2><br>
 					<h4 class="fragment highlight-current-green grow">Easy Recognition of Elements</h4>
 					<h4 class="fragment highlight-current-green grow">Fast Evaluation of Accessible Design</h4>
@@ -83,7 +82,7 @@
 						Given a Node quickly determine the accessible properties.
 					</aside>
 				</section>
-				<section><h2>Classify Info</h2></section>
+				<section><h2>AUDIENCE PARTICIPATION</h2></section>
 				<section data-background="img/link.png">
 					<h4 class="fragment fade-up" style="text-align:right">Name</h4>
 					<h4 class="fragment fade-up" style="text-align:right">Role</h4>
@@ -92,49 +91,30 @@
 						What information is important?
 					</aside>
 				</section>
-				<section><h2>Property Order</h2></section>
-				<section data-background="img/order.png">
-					<aside class="notes">
-						Order of properties matter, name and role are crucial so up at the top.
-						Also what values should be exposed and not hidden in expandable.
-						2 different containers.
-					</aside>
+				<section data-background="img/toolboxinfo.png"></section>
+				<section data-background="#7f0000">
+					<h2>Designs</h2><br>
+					<h3>Improvable</h3>
+					<p>VS</p>
+					<h3>Solid Designs</h3>
 				</section>
-				<section><h2>Property Emphasis</h2></section>
-				<section data-background="img/two_container.png"></section>
-				<section data-background="img/one_container.png"></section>
-				<section><h2>Grouping</h2></section>
-				<section data-background="img/grouping.png"></section>
-				<section>
-					<h2>Effeciency</h2>
-					<aside class="notes">
-						Cache the created propertys for the node, and only add new properties.
-						Improves performance.
-					</aside>
+				<section data-background="#7f0000">
+					<h2>Search</h2>
 				</section>
-				<section>All Property Views are created Dynamically</section>
-				<section>
-				<h4>Only Create new Properties</h4>
-	    <pre><code>
-    		if(!property.alreadyCreated) {
-    			//create view
-    		} else {
-    			//retrieve from local cache
-    		}
-	    </code></pre>
+				<section data-background="img/badsearch.png"></section>
+				<section data-background="#004c00">
+					<h2>Search</h2>
 				</section>
-				<section>
-				<h4>Always Update Value Field</h4>
-	    <pre><code>
-    		onPropertySelected () {
-    			//refresh value container
-    		}
-	    </code></pre>
+				<section data-background="img/goodsearch.png"></section>
+				<section data-background="#7f0000">
+					<h2>Image</h2>
 				</section>
+				<section data-background="img/badimage.png"></section>
+				<section data-background="#004c00">
+					<h2>Image</h2>
+				</section>
+				<section data-background="img/goodimage.png"></section>
 				<section data-background="#b27300">
-					<h2>DEMO</h2>
-				</section>
-				<section data-background="rgb(181, 83, 60)">
 					<h3>THANK YOU:</h3>
 					<p>University Team</p>
 					<p>Mozillian Community + Other Interns</p>
