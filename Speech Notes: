@@ -32,60 +32,62 @@ PROJECT:
 ---------------------------------------------------------------------------------------------------------------------
 
 This summer I had the oppurtunity to make Firefox Devtools more Accessible and learned a new way to navigate the web.
-Worked on bug fixes to improve the sightless navigation experience and a tool to evaluate the accessibility of a site.
-
----------------------------------------------------------------------------------------------------------------------
-SIGHTED WEB
----------------------------------------------------------------------------------------------------------------------
-What do we do when we visit a site we're not familiar with?
-- Eyes scan across the top of the page looking for important shortcuts/navigation links
-- Scan through content looking for headlines, bolded/highlighted text
-- Pictures/Videos
-
-We have the freedom to look around.
+Worked on bug fixes to improve the sightless navigation of devtools and created a tool to help developers improve their accessible design.
 
 ---------------------------------------------------------------------------------------------------------------------
 SIGHTLESS WEB
 ---------------------------------------------------------------------------------------------------------------------
 What do we do when we visit a site we're not familiar with?
-- Use Keyboard to navigate to different areas on the page
-- Only know the current area, don't know surrounding
+- Use Keyboard to navigate to different areas on the page. Using the Tab key will focus on a different area.
+- When the keyboard focuses on an area
+	-a screen reader, a computer program that turns text into speech, will read out info about the area
 
+To give you a better idea of what this is like, I'll simulate a screen reader.
+Try to form an image in your head.
+Search Button
+Featured Link
+News Link
+Music Link
+Sports Link
+
+Did you imagine a navigation bar?
+This is actually Twitter's navigation bar.
+
+The screen reader read out important information like:
+name, role, actions were inferred from the role
+
+The quality of your accessible design is related to the information provided by the screen reader.
 
 ---------------------------------------------------------------------------------------------------------------------
 TOOL:
 ---------------------------------------------------------------------------------------------------------------------
-
-Show TWITTER.COM TAB NAVIGATION
-Sightless Internet:
-- There is no looking, random scanning
-- Keyboard navigation is structured from top to bottom
-- (Screen Reader) Text to speech reading out accessible information for the current element
-- Information is provided by properties set by developer
-
-Purpose of tool:
-Easy recognition: Allow developers with disabilities to quickly identify elements by exposing key information
-Fast Evaluation: Provide developers interested in accessible design with a fast way to test and improve their website design
+Now if only there was a TOOL for developers where they can inspect areas of a website and predict what the screen reader would read out?
+A tool that developers could use to improve the accessible design of their site.
+Wouldn't that be USEFUL?
 
 Workflow of Tool:
-Show Picture of feature.
-Accessibility Panel outlined in red lives inside the inspector of Firefox Dev Tools.
-First the developer selects a Dom Node shown in yellow then the tool displays accessible properties in the panel.
+Select element on page, show properties like name, role, actions.
 
 ---------------------------------------------------------------------------------------------------------------------
-USE CASES AND DEMO:
+USE CASES:
 ---------------------------------------------------------------------------------------------------------------------
-Twitter Website
 
-Good Enough:
-Sign Up Button, Log In Button
+Examples of how you can use the tool.
 
-Bad:
-- Search Button
-- Featured Header
+Search:
+Fixed by aria-label
 
-Can't Navigate to:
-- More dropdown
+Image:
+Fixed by putting name in alt
+
+Dropdown:
+has-pop
+
+---------------------------------------------------------------------------------------------------------------------
+What'S NEXT
+---------------------------------------------------------------------------------------------------------------------
+Make this tool accessible.
+Developer's who are impaired visually can quickly identify elements on a page.
 
 ---------------------------------------------------------------------------------------------------------------------
 THANK YOU:
