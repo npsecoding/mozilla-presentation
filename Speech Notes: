@@ -14,9 +14,7 @@ Ramps
 It's a structure we've all seen.
 They've existed since 2600 B.C.E, an essential tool created by the Ancient Egyptians to improve the accessibility of stone blocks.
 Ramps allowed massive stones to be raised and transported easily making the construction of The Great Pyramid of Giza, a World Wonder, possible.
-
 The Ancient Egyptians realized the impact of accessible design, it made life easier and dreams possible.
-The need for accessbility has drove innovation and created a better way of life.
 
 As Tim Cook says:
 "Accessibility rights are human rights"
@@ -30,16 +28,33 @@ To put that number in perspective that's about 1 billion people.
 That's a huge loss of human potential and this number is only growing as people age motor skills, vision and hearing degrade.
 
 ---------------------------------------------------------------------------------------------------------------------
-VISION IMPAIRMENT
+PROJECT:
 ---------------------------------------------------------------------------------------------------------------------
-BRING UP TWITTER.COM in WEB BROWSER
-Sighted Internet:
-What do we do when we visit a site.
-If I've never been to a site before:
+
+This summer I had the oppurtunity to make Firefox Devtools more Accessible and learned a new way to navigate the web.
+Worked on bug fixes to improve the sightless navigation experience and a tool to evaluate the accessibility of a site.
+
+---------------------------------------------------------------------------------------------------------------------
+SIGHTED WEB
+---------------------------------------------------------------------------------------------------------------------
+What do we do when we visit a site we're not familiar with?
 - Eyes scan across the top of the page looking for important shortcuts/navigation links
-- Scan through content looking for headlines, bolded/highlighted fields, pictures
-- Random scanning and activation
-If I'm familiar with the site : Targeted scanning and activation for example the search bar
+- Scan through content looking for headlines, bolded/highlighted text
+- Pictures/Videos
+
+We have the freedom to look around.
+
+---------------------------------------------------------------------------------------------------------------------
+SIGHTLESS WEB
+---------------------------------------------------------------------------------------------------------------------
+What do we do when we visit a site we're not familiar with?
+- Use Keyboard to navigate to different areas on the page
+- Only know the current area, don't know surrounding
+
+
+---------------------------------------------------------------------------------------------------------------------
+TOOL:
+---------------------------------------------------------------------------------------------------------------------
 
 Show TWITTER.COM TAB NAVIGATION
 Sightless Internet:
@@ -47,14 +62,6 @@ Sightless Internet:
 - Keyboard navigation is structured from top to bottom
 - (Screen Reader) Text to speech reading out accessible information for the current element
 - Information is provided by properties set by developer
-
----------------------------------------------------------------------------------------------------------------------
-PROJECT:
----------------------------------------------------------------------------------------------------------------------
-
-This summer I had the oppurtunity to make Firefox Devtools more Accessible and learned a new way to navigate the web.
-Worked on various bug fixes to improve the sightless navigation experience of devtools and a tool to evaluate the accessibility of the site.
-This talk will focus on an Accessibility Tool I created.
 
 Purpose of tool:
 Easy recognition: Allow developers with disabilities to quickly identify elements by exposing key information
@@ -64,33 +71,6 @@ Workflow of Tool:
 Show Picture of feature.
 Accessibility Panel outlined in red lives inside the inspector of Firefox Dev Tools.
 First the developer selects a Dom Node shown in yellow then the tool displays accessible properties in the panel.
-
----------------------------------------------------------------------------------------------------------------------
-PROCESS:
----------------------------------------------------------------------------------------------------------------------
-What information goes into section:
-Use the properties to form a picture of the element in the developer's head.
-
-Steps:
-
-1.) Distinguishing between Essential information and Interesting Details.
-	- Important and crucial
-		- Name so developers know what they're looking at
-		- Role so developers know what this element does
-		- Actions that can be performed
-	- Interesting
-		- States
-		- Bounds: Where in the page the element is located
-2.) Using the Display layout what's the fastest way to convey the information
-	- Order of Properties
-	- Emphasized value or in expandable
-		- Accomplished by using two different formats, 1 and 2 container views
-3.) More Understandable
-	- Grouping similar items
-	- Title and Name overriding
-4.) Effecient
-	- Fast and quick retrieval of properties
-	- Cache already created views
 
 ---------------------------------------------------------------------------------------------------------------------
 USE CASES AND DEMO:
